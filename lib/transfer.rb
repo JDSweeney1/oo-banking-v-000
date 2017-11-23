@@ -15,9 +15,10 @@ class Transfer
 
   def execute_transaction
     if !sender.valid?
-      "Transaction rejectd. Please chekc you account balance."
+      "Transaction rejectd. Please check you account balance."
       self.status = "rejected"
     end
+    self.status
     if self.status == "pending"
       sender.balance = sender.balance - self.amount
       receiver.balance = receiver.balance + self.amount
