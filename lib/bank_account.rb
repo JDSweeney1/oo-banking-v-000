@@ -15,4 +15,5 @@ attr_reader :name
 
   def display_balance
     "Your balance is $#{self.balance}."
+  end
 end
