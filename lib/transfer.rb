@@ -7,6 +7,7 @@ class Transfer
     @sender = sender
     @receiver = receiver
     @amount = amount
+    @counter = 1
   end
 
   def valid?
@@ -14,6 +15,8 @@ class Transfer
   end
 
   def execute_transaction
+    counter = 0
+    
     sender.balance = sender.balance - self.amount
     receiver.balance = receiver.balance + self.amount
     self.status = "complete"
