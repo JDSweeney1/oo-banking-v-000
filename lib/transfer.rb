@@ -25,7 +25,5 @@ class Transfer
      receiver.balance = receiver.balance + self.amount
      self.status = "complete"
     end
-    self.counter
-    binding.pry
   end
 end
