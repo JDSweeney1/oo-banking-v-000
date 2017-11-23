@@ -22,5 +22,6 @@ class Transfer
       receiver.balance = receiver.balance + self.amount
       self.status = "complete"
       self.counter += 1
+    end
   end
 end
