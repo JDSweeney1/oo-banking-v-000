@@ -24,5 +24,6 @@ class Transfer
      self.status = "complete"
      self.counter += 1
     end
+    self.counter
   end
 end
