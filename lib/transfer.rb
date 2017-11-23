@@ -1,3 +1,4 @@
+require 'pry'
 class Transfer
 
   attr_accessor :status, :sender, :receiver, :amount, :counter
@@ -25,5 +26,6 @@ class Transfer
      self.counter += 1
     end
     self.counter
+    binding.pry
   end
 end
