@@ -20,7 +20,7 @@ class Transfer
       self.status = "rejected"
       "Transaction rejectd. Please check you account balance."
     end
-    when self.status == "pending"
+    while self.status == "pending"
      sender.balance = sender.balance - self.amount
      receiver.balance = receiver.balance + self.amount
      self.status = "complete"
